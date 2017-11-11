@@ -1,7 +1,23 @@
 /*Eric Pickup, 104555011
 03-60-256 Assignment #2
-Accepts 6 command line inputs: 1 file name for image, 5 colors, then
-turns those colors into a specific image (test to see illustration)
+Write a C program to create a binary PPM file with 1000x1000 pixels. It used five
+input colors to draw a picture. The input colors can be: red, green, blue, yellow,
+orange, cyan, magenta, ocean, violet. The corners of the central part should use the
+250th and 750th row/column.
+Requirements on parallel execution:
+The original process should write the header information into the image file.
+Use fork() to create 10 child processes. Each child process can use about 300KB of
+memeory to calculate 100 rows and write the data into the image file.
+
+**Not allowed to use standard I/O library functions or graphic related libraries.
+
+Command line arguments include the following in order:
+1) Name of the image file
+2) Color for center part
+3) Color for top-left
+4) Color for top-righ
+5) Color for bottom left
+6) Color for bottom right
 */
 
 #include <stdio.h>
