@@ -14,7 +14,7 @@
  * If maze[4][1] = 0, this means there is no door from room 4 to room 1.
  * EX:
  * Input:					Output:
- *  8						0, 5, 3, 6
+ *  	8					0, 5, 3, 6
  *	0
  *	6
  *	1,1,0,0,1,1,0,0
